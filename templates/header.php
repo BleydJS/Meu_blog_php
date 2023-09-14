@@ -19,5 +19,14 @@
 
 <body>
     <header>
-        TEMPLATE CABEÇALHO
+        <a href="<? $BASE_URL ?>" id="logo">
+    <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Meu blog">
+</a>
+
+<ul>
+    <li><a href="<?= $BASE_URL ?>">Home</a></li>
+    <li><a href="#">Categorias</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="<?= $BASE_URL ?>contato.php">Contato</a></li>
+</ul>
     </header>    
