@@ -1,5 +1,8 @@
 <?php 
-    include_once("helpers/url.php");
+    include_once("helpers/url.php");  //serve para dar apoio, vai simplesmente onde é a raiz do sistema
+    include_once("data/posts.php");  
+    include_once("data/categories.php");  
+
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +26,10 @@
     <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Meu blog">
 </a>
 
-<ul>
-    <li><a href="<?= $BASE_URL ?>">Home</a></li>
-    <li><a href="#">Categorias</a></li>
-    <li><a href="#">Home</a></li>
-    <li><a href="<?= $BASE_URL ?>contato.php">Contato</a></li>
+<ul id="navbar">
+    <li><a href="<?= $BASE_URL ?>"  class="nav-link">Home</a></li>
+    <li><a href="#" class="nav-link">Categorias</a></li>
+    <li><a href="#" class="nav-link">Home</a></li>
+    <li><a href="<?= $BASE_URL ?>contato.php" class="nav-link">Contato</a></li>
 </ul>
     </header>    

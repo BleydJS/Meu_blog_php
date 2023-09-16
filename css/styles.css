@@ -1,9 +1,67 @@
 *{
     font-family: 'Montserrat', sans-serif;
-
+    padding: 0;     
+    margin: 0;
+    box-sizing: border-box; /*deixa os elementos com o limite da borda correto*/
 }
 
 
-body {
-    background-color: aquamarine;
+html {
+    min-height: 100vh;  /*altura da tela do usuário 100 view hight*/
+    position: relative; /*pra elementos de posição absoluta, no caso o footer*/
+}
+
+main {
+    margin-bottom: 250px;  /*para dar um espaçamento entre o conteúdo e o rodapé*/
+}
+
+/* NAVBAR */
+
+#logo {
+    position: absolute;  
+    top: 10px;
+    left: 9.5%;
+}
+
+#logo img {
+    width: 50px;
+}
+
+#navbar {
+    display: flex;      
+    align-items: center;  
+    justify-content: center;
+    background-color: #161616;
+    padding: 20px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+#navbar li{
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 14px;
+}
+
+#navbar .nav-link:hover {
+    color: #999;
+  
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%; /*100% da largura da pagina*/
+    position: absolute;  /*para poder jogar ele para o fundo*/
+    bottom: 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
 }
