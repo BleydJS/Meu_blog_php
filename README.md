@@ -1,2 +1,2 @@
 # Meu_blog_php
-Teste
+Blog criado em php
