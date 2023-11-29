@@ -6,7 +6,7 @@
 <main>
 
     <div id="title-container">
-        <h1>Blog Bleyd</h1>
+        <h1>programming blog</h1>
         <p>O seu blog de programação</p>
     </div>
 
